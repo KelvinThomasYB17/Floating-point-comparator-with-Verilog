@@ -1,0 +1,7 @@
+module floating_point_comparator#(
+	parameter WIDTH = 32
+	)(
+	input wire a,b,
+	output wire greater, less, equal
+	);
+	

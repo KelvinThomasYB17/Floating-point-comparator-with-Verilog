@@ -1,0 +1,14 @@
+module sign_comparator(
+	input wire x,y,
+	output wire ¨[2:0] comparison);
+	
+always@(*) begin
+	if (x == y) 
+		comparison = 3b100;
+	else if (x > y) 
+		comparison = 3b010;
+	else if (x < y) 
+		comparison = 3b001;
+	else
+		comparison 3b000;
+end
